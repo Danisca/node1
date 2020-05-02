@@ -12,7 +12,7 @@ app.get("/views/learn_more.html",function(req,res){
     res.sendFile(__dirname + "/views/learn_more.html");
 });
 
-app.listen(3000,function(){
+app.listen(process.env.PORT || 3000,function(){
     console.log("server is running at 3000 port");
     
 });
